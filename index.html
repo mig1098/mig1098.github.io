@@ -1,3 +1,10 @@
+<?php
+/**
+ * http://nirgeier.github.io/blog/archives/
+ * http://git-tips.com/
+ * http://ivan.zmerzlyi.me/
+ * */
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,226 +15,215 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body{
+            background: #f9f9f9;
+        }
+        #mg-wrapper{
+            min-height: 600px;
+        }
+        .navbar {
+            border-radius: 0;
+        }
+        .navbar-default{
+            -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
+        }
+        .tech-list span {
+            font-size: 12px;
+            line-height: 16px;
+            border: 1px solid #ddd;
+            background: #efefef;
+            margin-bottom: 5px;
+            padding: 2px 8px;
+            display: inline-block;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+        .box-left{
+            border: 0px;
+            padding: 8px;
+        }
+        .box-left{
+            
+        }
+        .box-right h3{
+            margin-top: 5px;
+        }
+        .mg-bg-box{
+            background: rgba(191, 191, 191, 0.15);
+            overflow: auto;
+        }
+        .mg-content-box{
+            padding: 10px;
+        }
+        .mg-content-box > h3{
+            border-bottom: 1px solid rgba(228, 221, 221, 0.45);
+        }
+        footer,header{
+            background: #f8f8f8;
+        }
+        .mg-height{
+            height: 10px;
+        }
+    </style>
 </head>
 <body>
-<div class="navbar-more-overlay"></div>
-	<nav class="navbar navbar-inverse navbar-fixed-top animate">
-		<div class="container navbar-more visible-xs">
-			<form class="navbar-form navbar-left" role="search">
-				<div class="form-group">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Search for...">
-						<span class="input-group-btn">
-							<button class="btn btn-default" type="submit">Submit</button>
-						</span>
-					</div>
-				</div>
-			</form>
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="container">
-			<div class="navbar-header hidden-xs">
-				<a class="navbar-brand" href="#">Brand</a>
-			</div>
-			<ul class="nav navbar-nav navbar-right mobile-bar">
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-home"></span>
-						Home
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-info"></span>
-						<span class="hidden-xs">About the Boat</span>
-						<span class="visible-xs">About</span>
-					</a>
-				</li>
-				<li class="hidden-xs">
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-ship"></span>
-						Cruises
-					</a>
-				</li>
-				<li class="hidden-xs">
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-phone"></span>						
-						<span class="hidden-xs">Contact Us</span>
-						<span class="visible-xs">Contact</span>
-					</a>
-				</li>
-				<li class="visible-xs">
-					<a href="#navbar-more-show">
-						<span class="menu-icon fa fa-bars"></span>
-						More
-					</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-<div class="container">
-<div class="row">
-    <div class="col-md-1"></div>
-	<div class="col-md-6">
-		<div id="postlist">
-			<div class="panel">
-                <div class="panel-heading">
-                    <div class="text-center">
-                        <div class="row">
-                            <div class="col-sm-9">
-                                <h3 class="pull-left">Welcome</h3>
-                            </div>
-                            <div class="col-sm-3">
-                                <h4 class="pull-right">
-                                <small><em>2014-07-30<br>18:30:00</em></small>
-                                </h4>
-                            </div>
-                        </div>
+<header>
+    <div class="mg-header-hero"><!--image--></div>
+    <div class="mg-header-content">
+    </div>
+</header>
+<!---->
+<section>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <?php if(false){?>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+            <? } ?>
+        </div><!-- /.navbar-container-fluid -->
+    </nav>
+</section>
+<div class=""></div>
+<!---->
+<section>
+</section>
+<!---->
+<section id="mg-wrapper">
+    <div class="container">
+        <div class="col-lg-8 col-md-8">
+            <div class="row">
+                <div class="box-left mg-bg-box">
+                    <div class="mg-content-box">
+                    <h3>Where does it come from?</h3>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sente.
+                    </div>
+                </div><!-- ./ mg-bg-box -->
+            </div>
+            <div class="row mg-height"></div>
+            <div class="row">
+                <div class="box-left mg-bg-box">
+                    <div class="mg-content-box">
+                        <h3>Where does it come from?</h3>
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                     </div>
                 </div>
-            <div class="panel-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in... <a href="#">Read more</a>
             </div>
-            <div class="panel-footer">
-                <span class="label label-default">Welcome</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>
+            <div class="row mg-height"></div>
+            <div class="row">
+                <div class="box-left mg-bg-box">
+                    <div class="mg-content-box">
+                        <h3>What is Lorem Ipsum?</h3>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="panel">
-                <div class="panel-heading">
-                    <div class="text-center">
-                        <div class="row">
-                            <div class="col-sm-9">
-                                <h3 class="pull-left">Post With image</h3>
-                            </div>
-                            <div class="col-sm-3">
-                                <h4 class="pull-right">
-                                <small><em>2014-07-30 18:30:00</em></small>
-                                </h4>
-                            </div>
-                        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="skills box-right mg-bg-box">
+                <div class="mg-content-box">
+                    <h3 class="section-header">Skills and Qualifications</h3>
+                    <div class="tech-list">
+                        <span>HTML</span> /
+                        <span>CSS</span> /
+                        <span>PHP</span> /
+                        <span>MySQL</span> /
+                        <span>JavaScript</span> /
+                        <span>jQuery</span> /
+                        <span>AJAX</span> /
+                        <span>XML</span> /
+                        <span>JSON</span> /
+                        <span>SQL</span> /
+                        <span>HTML5</span> /
+                        <span>CSS3</span> /
+                        <span>OOP MVC</span> /
+                        <span>Subversion</span> /
+                        <span>Git</span> /
+                        <span>Web Applications</span> /
+                        <span>Web Development</span>
                     </div>
                 </div>
-            <div class="panel-body">
-                <a href="#" class="thumbnail">
-                    <img alt="Image" src="http://i.imgur.com/tAHVmXi.jpg">
-                </a>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation... <a href="#">Read more</a>
+            </div><!-- ./ mg-bg-box -->
+            <div class="row mg-height"></div>
+            <div class="box-right mg-bg-box">
+                <div class="mg-content-box">
+                    <h3>Links</h3>
+                    <div>
+                        <p><a href="#">readable English</a></p>
+                        <p><a href="#">th the release of Letraset sheets</a></p>
+                        <p><a href="#">below for those interested</a></p>
+                        <p><a href="#">remaining essentially unchanged</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="panel-footer">
-                <span class="label label-default">Image</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>
+            <div class="row mg-height"></div>
+            <div class="box-right mg-bg-box">
+                <div class="mg-content-box">
+                    <div>
+                         <h3>HTML/CSS</h3>
+                        <p class="text-center">Learn new tips and tricks on HTML & CSS</p>
+                        <p class="text-center"><a class="btn btn-default" href="http://git-tips.com/category/html-css/" role="button">Get Started</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-		<div class="text-center"><a href="#" id="loadmore" class="btn btn-primary">Older Posts...</a></div>
-</div>
-	<div class="col-md-1"></div>
-	<div class="col-md-3">
-	</div>
-	<div class="col-md-1">
-	</div>
-</div>
-</div>
+</section>
+<!---->
+<footer>
+    <hr />
+    <div class="container">
+        <p>
+            Copyright &copy; 2017 - Miglio Esaud -
+            <span class="credit">Powered by <a href="http://appsolutions.info">Appsolutions</a></span>
+        </p>
+    </div>
+</footer>
 </body>
 </html>
