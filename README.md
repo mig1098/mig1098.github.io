@@ -1,4 +1,4 @@
 php web developer
 
-# Gitlab - pasos basicos
+## Gitlab - pasos basicos
 http://mig1098.github.com/gitlab-guia/
