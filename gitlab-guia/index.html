@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" />
+<meta name="author" content="mig.inc" />
+
+<title>Git lab guia</title>
+</head>
+
+<body>
+
+    <pre>
+USO DE GIT
+Crear una cuenta en:
+ https://gitlab.com/users/sign_in
+
+
+descargar e instalar git para el control de versiones:
+https://git-scm.com/
+
+
+Después de instalar git ejecutar consola de comando Git Bash
+
+
+Agregar nombre e email para el login posterior:
+$ git config –global user.name “nombre”
+$ git config –global user.email “email@ejemplo.com”
+
+
+Comprobar datos:
+git config --global --list
+
+
+Para saber que archivos están para actualizarse:
+$ git status
+
+
+EN LA CARPETA LOCAL
+
+Para crear una copia del repositorio
+Git clone “url repositorio”
+Ejemplo:
+Git clone https://gitlab.com/globalip/callcenter.git
+
+Para actualizar y subir archivos y carpetas creadas en el servidor
+$ git add -A
+$ git commit -a -m "escribir un mensaje de actualizacion"
+$ git push
+
+
+
+EN LA CARPETA REMOTA
+
+Para saber la ruta en donde se encuentra remotamente:
+$ git branch
+
+Para descargar los últimos cambios de la carpeta remota a la carpeta local.
+Ir a la carpeta donde se descargó los archivos del repositorio
+$ git pull
+
+
+
+    </pre>
+
+
+</body>
+</html>
