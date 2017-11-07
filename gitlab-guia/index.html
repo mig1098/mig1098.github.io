@@ -54,5 +54,16 @@ Ir a la carpeta donde se descargó los archivos del repositorio
 $ git pull
 
 
+Crear una carpeta en local con archivos y directorios, luego subirlo
+a un projecto nuevo
+
+mkdir repo
+cd repo
+git init
+git remote add origin git://github.com/cmcculloh/repo.git
+git add -A
+git commit -a -m "upload"
+git push -f origin master
+
 
     </pre>
