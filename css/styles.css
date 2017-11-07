@@ -53,7 +53,10 @@ footer,header{
 .mg-height{
     height: 10px;
 }
-
+pre{
+    padding: 0 10px;
+    line-height: 1.2em;
+}
 @media screen and (max-width:1024px){
  
 }
