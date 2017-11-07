@@ -3,11 +3,11 @@
     {% include head.html %}
     <body>
         <section id="mg-wrapper">
+            {% include header.html %}
             <div class="container">
-                {% include header.html %}
                 {{ content }}
-                {% include footer.html %}
             </div> <!-- /container -->
+            {% include footer.html %}
         </section> <!-- /.mg-wrapper -->
         {% include scripts.html %}
     </body>
