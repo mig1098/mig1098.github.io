@@ -15,52 +15,86 @@ https://gitlab.com/users/sign_in
 </pre>
 
 descargar e instalar git para el control de versiones:
+<pre>
+    <code>
 https://git-scm.com/
+    </code>
+</pre>
 
-
+<div>
 Después de instalar git ejecutar consola de comando Git Bash
-
-
 Agregar nombre e email para el login posterior:
+</div>
+<pre>
+    <code>
 $ git config –global user.name “nombre”
 $ git config –global user.email “email@ejemplo.com”
-
+    </code>
+</pre>
 
 Comprobar datos:
+</div>
+<pre>
+    <code>
 git config --global --list
-
-
+    </code>
+</pre>
+<div>
 Para saber que archivos están para actualizarse:
+</div>
+<pre>
+    <code>
 $ git status
+    </code>
+</pre>
 
-
+<div>
 EN LA CARPETA LOCAL
 
 Para crear una copia del repositorio
 Git clone “url repositorio”
 Ejemplo:
+</div>
+<pre>
+    <code>
 Git clone https://gitlab.com/globalip/callcenter.git
-
+    </code>
+</pre>
+<div>
 Para actualizar y subir archivos y carpetas creadas en el servidor
+</div>
+<pre>
+    <code>
 $ git add -A
 $ git commit -a -m "escribir un mensaje de actualizacion"
 $ git push
+    </code>
+</pre>
 
-
-
+<div>
 EN LA CARPETA REMOTA
 
 Para saber la ruta en donde se encuentra remotamente:
+</div>
+<pre>
+    <code>
 $ git branch
-
+    </code>
+</pre>
+<div>
 Para descargar los últimos cambios de la carpeta remota a la carpeta local.
 Ir a la carpeta donde se descargó los archivos del repositorio
+</div>
+<pre>
+    <code>
 $ git pull
-
+    </code>
+</pre>
 
 Crear una carpeta en local con archivos y directorios, luego subirlo
 a un projecto nuevo
-
+<pre>
+    <code>
 mkdir repo
 cd repo
 git init
@@ -68,10 +102,13 @@ git remote add origin git://github.com/cmcculloh/repo.git
 git add -A
 git commit -a -m "upload"
 git push -f origin master
-
+    </code>
+</pre>
+<div>
 <span>
 Crear una carpeta limpia y traer archivos del repositorio remoto
 </span>
+</div>
 <pre>
     <code>
 mkdir repo
