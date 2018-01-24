@@ -1,0 +1,31 @@
+---
+layout: default
+title: uso de git
+description: comandos basicos
+---
+
+<div>
+<h3>USO DE GIT</h3>
+<span>Crear un nuevo repositorio en linea de comandos git:</span>
+</div>
+<pre>
+    <code>
+    echo "# [nombre_repositorio]" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin https://github.com/mig1098/[nombre_repositorio].git
+    git push -u origin master
+    </code>
+</pre>
+
+<div>
+  <span>Subir a un repositorio existente desde linea de comandos</span>
+</div>
+<pre>
+  <code>
+  git remote add origin https://github.com/mig1098/miglio.git
+  git push -u origin master
+  </code>
+</pre>
+
