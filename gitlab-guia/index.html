@@ -88,16 +88,6 @@ git remote -v
 </pre>
 
 <div>
-Cambiar url del repositorio:
-</div>
-<pre>
-    <code>
-git remote set-url origin http://192.168.1.104/user/repo.git
-    </code>
-</pre>
-
-
-<div>
 EN LA CARPETA REMOTA<br />
 Para saber la ruta en donde se encuentra remotamente:
 </div>
@@ -142,16 +132,29 @@ Crear una carpeta limpia y traer archivos del repositorio remoto
 
 <pre>
     <code>
-mkdir repo
-cd repo
-git init
-git remote add origin git://github.com/cmcculloh/repo.git
-git fetch --all
-git pull origin master
+$ mkdir repo
+$ cd repo
+$ git init
+$ git remote add origin git://github.com/cmcculloh/repo.git
+$ git fetch --all
+$ git pull origin master
     </code>
 </pre>
 
+<div>
+Subir archivos a un repositorio existente
+</div>
+<code>
+$ git remote add origin git@github.com:username/new_repo
+$ git push -u origin master
+</code>
 
+<div>
+Cambiar url del repositorio en la carpeta actual:
+</div>
+<code>
+$ git remote set-url origin http://192.168.1.104/user/repo.git
+</code>
 
 
 <div>
